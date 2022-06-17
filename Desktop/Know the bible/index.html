@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bible Quote Generator</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome to the bible quiz</h1>
+    <div class="quote-container" id="quote-container">
+        <!-- Quote -->
+        <div class="quote-text">
+            <i class="fas fa-quote-left"></i>
+            <span id="quote"></span>
+        </div>
+        <!-- Author -->
+        <div class="quote-author">
+            <span id="author"></span>
+        </div>
+         <!-- Buttons -->
+        <div class="button-container">
+            <button class="twitter-button" id="twitter" title="Tweet This!">
+                <i class="fab fa-twitter"></i>
+            </button>
+            <button id="new-quote">New Verse</button>
+        </div>
+        <div class="answer">
+             <form action="" class="passage" id="passage">
+                <input type="text" placeholder="enter the passage" id="passage-text"
+                class="passage-text" required>
+                <button class="answer-btn" id="answer-btn">submit</button>
+             </form>      
+        </div>
+        <div> <p id="message" class="message"></p></div>
+     </div>
+     <!-- Loader -->
+     <div class="loader" id="loader"></div>
+     <!-- Script -->
+     <script src="index.js"></script>
+</body>
+</html>
